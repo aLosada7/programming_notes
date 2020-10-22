@@ -1,4 +1,4 @@
-# ViewChild & ViewChildren 
+# ViewChild & ViewChildren property decorators
 
 Using a reference, you can view that child, using @ViewChild(ref) referenceName; (reference can be an element or a component)
 
