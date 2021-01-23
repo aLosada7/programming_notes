@@ -6,10 +6,14 @@ Abstract Method - A method without body (implementation)
 Factory - Object that creates other objects
 
 
-## What it is? What solves?
+## What is it? What solves?
 
 An Abstract Factory creates objects that are related by a common theme. Creating entire product families without specifying their concrete classes (multiple families of objects)
 it is possible using an Abstract Factory.
+
+# Interesting facts
+
+* An Abstract Factory can be used to hide a switch instruction, avoiding its visibility.
 
 ## An example:
 * **Java**
