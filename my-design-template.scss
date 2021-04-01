@@ -1,0 +1,271 @@
+// This is the template I use to create my designs with CSS. I'm working on completing it. 
+// You are free to use it and change everything you want :)
+
+$bp-large: 1024px;
+
+$primary-color: rgb(35, 195, 143);
+
+.navbar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+// links
+a {
+    text-decoration: none !important;
+}
+
+// list
+ul, li {
+    list-style-type: none;
+    margin-bottom: 0 !important;
+}
+
+
+// page
+.page-section {
+    width: 100%;
+
+    // buttons
+    .button {
+        margin: 1rem 0.5rem;
+        align-items: center;
+        border: 1px solid rgb(229, 229, 229);
+        border-radius: 2px;
+        padding: 6px 10px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        cursor: pointer;
+
+        @media only screen and (max-width: $bp-large) {
+            white-space: nowrap;
+        }
+    }
+
+    .green-button {
+        background: rgb(35, 195, 143);
+        width: fit-content;
+        margin: 1rem 0;
+        padding: 1rem;
+        color: hsla(0,0%,100%,.99);
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        font-size: 0.785rem;
+        font-weight: 600;
+        box-shadow: 2px 2px 50px rgb(0 0 0 / 15%);
+        margin-bottom: 1rem;
+        border: none;
+    }
+
+    .white-button {
+        background-color: rgb(255, 255, 255);
+        color: rgb(155, 155, 155);
+    }
+
+    .active-white-button {
+        background-color: rgb(35, 195, 143);
+        color: hsla(0,0%,100%,.99);
+    }
+
+}
+
+.page-section.first-section {
+    padding-top: 82px;
+}
+
+.bi {
+    margin-left: 0.6rem;
+}
+
+// grid
+.content-wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6.6vmax 60px;
+    width: 100%;
+
+    @media only screen and (max-width: $bp-large) {
+        padding: 3.3vmax 60px;
+    }
+
+    .row {
+        box-sizing: border-box;
+        display: flex;
+        flex: 0 1 auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+
+        // cols of 24 de https://www.spotifyjobs.com/categories
+        .col-8, .col-12, .col-16, .col-18, .col-20, .col-mobile-24 {
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        .col-8 {
+            flex-basis: 33.3333333333%;
+            max-width: 33.3333333333%;
+        }
+
+        .col-12 {
+            flex-basis: 50%;
+            max-width: 50%;
+        }
+
+        .col-16 {
+            flex-basis: 66.6666666667%;
+            max-width: 66.6666666667%;
+        }
+
+        .col-18 {
+            flex-basis: 75%;
+            max-width: 75%;
+        }
+
+        .col-20 {
+            flex-basis: 83.3333333333%;
+            max-width: 83.3333333333%;
+        }
+
+        .col-24 {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+
+        .col-offset-2 {
+            margin-left: 8.3333333333%;
+        }
+
+        .col-offset-4 {
+            margin-left: 16.6666666667%;
+        }
+
+        .order-1 { order: 1; }
+
+        .order-2 { order: 2; }
+
+        @media only screen and (max-width: $bp-large) {
+            .col-mobile-24 {
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+
+            .col-offset-mobile-0 {
+                margin-left: 0;
+            }
+
+            .place-up { order: -1; }
+            .order-mobile-1 { order: 1 !important; }
+            .order-mobile-2 { order: 2 !important; }
+        }
+    }
+
+    .row.center {
+        justify-content: center;
+    }
+}
+
+// text
+h1, h2, h3, h4, h5, h6 {
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 16px;
+    }
+
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: none;
+}
+
+h2 { font-size: calc((3.2 - 1) * 1.2vw + 1rem); }
+h3 { font-size: 22px; }
+
+.text-center {
+    text-align: center;
+}
+
+@media only screen and (max-width: $bp-large) {
+    .text-center-mobile { text-align: center; }
+}
+
+.line-140 {
+    line-height: 140%;
+}
+
+// margin
+.mt-8 { margin-top: 8px; }
+
+.mt-16 { margin-top: 16px; }
+
+.mt-xxs { margin-top: 25px; }
+
+.mt-xs { margin-top: 40px; }
+
+.mt-l { margin-top: 150px; }
+
+.mt-xxl { margin-top: 250px; }
+
+.mb-8 { margin-bottom: 8px; }
+
+.mb-16 { margin-bottom: 16px; }
+
+.mb-xxs { margin-bottom: 25px; }
+
+.mb-xs { margin-bottom: 40px; }
+
+.mb-l { margin-bottom: 150px; }
+
+.mb-xxl { margin-bottom: 250px; }
+
+@media only screen and (max-width: $bp-large) {
+    .mt-mobile-l { margin-top: 70px; }
+    
+    .mb-mobile-8 { margin-bottom: 8px; }
+    .mb-mobile-16 { margin-bottom: 16px; }
+    .mb-mobile-l { margin-bottom: 70px; }
+
+    // overflow-x
+    .overflow-x-mobile {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        overflow: scroll hidden;
+    }
+}
+
+// tags
+.tags-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 15px;
+    border-radius: 100px;
+    border: 1px solid transparent;
+    flex-shrink: 0;
+}
+
+.tags-green {
+    background: rgb(35, 195, 143);
+    color: #fff;
+}
+
+.tags-black {
+    background: #191414;
+    color: #fff;
+}
+
+// colors
+.color-light-black {
+    color: rgba(0,0,0,.65);
+}
+
+@mixin invertColors {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
