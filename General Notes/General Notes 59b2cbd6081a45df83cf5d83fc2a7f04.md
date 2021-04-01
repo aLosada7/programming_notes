@@ -1,5 +1,21 @@
 # General Notes
 
+## Clean Code
+
+Basic properties = Readability + Maintainability
+
+Enjoy its lecture like you would enjoy your favorite novel
+
+**Refactoring**
+
+> First, you make it work. Then, you make it right ~ Kent Beck
+
+Clean code does not repeat itself (following DRY for knowledge duplication)
+
+**Testing**
+
+Automated tests help you to guarantee that behaviour does not change after refactoring
+
 ## SQL vs NoSQL Databases
 
 ### SQL
@@ -30,7 +46,7 @@ aria-label → Visual icon button, as an closing x. Announce something to the us
 
 aria-labelledby and aria-describedby
 
-![General%20Notes%2071a78abca2774de2907c7e9df4aa1116/Screenshot_2021-02-03_at_19.57.54.png](General%20Notes%2071a78abca2774de2907c7e9df4aa1116/Screenshot_2021-02-03_at_19.57.54.png)
+![General%20Notes%2059b2cbd6081a45df83cf5d83fc2a7f04/Screenshot_2021-02-03_at_19.57.54.png](General%20Notes%2059b2cbd6081a45df83cf5d83fc2a7f04/Screenshot_2021-02-03_at_19.57.54.png)
 
 role
 
@@ -46,7 +62,7 @@ Block-element-modifier (BEM) → [http://getbem.com/naming/](http://getbem.com/n
 
 __ for elements and — for modifiers
 
-## Java concepts
+## Computer science concepts
 
 - Polimorfism → Muchas clases se relacionan entre sí a través de herencia. Llevar a cabo acciones de distintas formas.
 
@@ -57,3 +73,5 @@ Example: Pig y Dog heredan un método de Animal
 - Composition → Implementas una has-a en clases, en el que el objeto contenido no puede existir sin el padre (herencia)
 
 Example: Person has a job, books have a library (no pueden existir sin el/ella)
+
+- Abstraction → Redución de la complejidad de una función o objeto. Con datos, solo mostrar los detalles esenciales al usuario
